@@ -1,0 +1,4 @@
+medium*
+.env
+succeed.csv
+failed.csv
