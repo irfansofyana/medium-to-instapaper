@@ -86,13 +86,18 @@ func createFolder() error {
 	if len(fldr.ID) == 0 {
 		svc := getFolderSvc()
 
-		_, err := svc.Add(instapaperCfg.MediumFolder)
+		f, err := svc.Add(instapaperCfg.MediumFolder)
 		if err != nil {
 			return err
 		}
+
+		instapaperCfg.MediumFolder = f.ID.String()
+		return nil
 	}
 
 	log.Println("finished to create folder for medium in instapaper")
+
+	instapaperCfg.MediumFolder = fldr.ID.String()
 	return nil
 }
 

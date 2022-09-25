@@ -4,7 +4,7 @@ Do you have a bunch of reading lists in your medium account and want to add them
 
 ## Prerequisites
 1. You need to have Client ID and Client Secret to interact with Instapaper. Check [this](https://www.instapaper.com/api) article to find out more about that.
-2. Go (>= 1.17) installed in your machine
+2. Go installed in your machine
 
 ## Steps
 
